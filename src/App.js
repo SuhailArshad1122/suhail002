@@ -21,7 +21,7 @@ return (
 
     <div className={`box ${isLit ? 'dayLight' : ''}`}>
         <h5>Light Status = {isLit ? 'Light is on' : 'Light is Off'} </h5>
-        <h5>{isLit ? <img src={lightison} height='40'/> : <img src={lightisoff} height='40'/>} </h5>
+        <h5>{isLit ? <img src={lightison} height='40' alt='on'/> : <img src={lightisoff} height='40' alt='off'/>} </h5>
         <button onClick={ () => setLit(true) }> ON</button>
         <span> </span>
         <button onClick={() => setLit(false)}>OFF</button>

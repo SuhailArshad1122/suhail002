@@ -16,21 +16,16 @@ function App() {
     setCount(prevCount => prevCount + 1)
 
   }
- 
-  function clicked() {
-    
-    { isLit ? console.log('Light is on') : console.log('Light is Off')  };
-  }
-
+  
 return (
-<div>
+
     <div className={`box ${isLit ? 'dayLight' : ''}`}>
         <h5>Light Status = {isLit ? 'Light is on' : 'Light is Off'} </h5>
         <h5>{isLit ? <img src={lightison} height='40'/> : <img src={lightisoff} height='40'/>} </h5>
         <button onClick={ () => setLit(true) }> ON</button>
         <span> </span>
         <button onClick={() => setLit(false)}>OFF</button>
-    </div>
+   
         <br></br>
         <button onClick={decrementCount}> - </button>
         <span> {count} °C </span>
@@ -38,7 +33,7 @@ return (
         <br></br>
         <button onClick={() => setCount(22)}>  </button>
         <span> Click to reset temp to default </span>
-</div>
+    </div>
   )
 }
 export default App;

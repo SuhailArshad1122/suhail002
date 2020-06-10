@@ -1,3 +1,15 @@
+.box {
+  height: 1500 px;
+  background-color: darkgray ;
+  text-align: center;
+}
+
+.dayLight {
+  background-color: blanchedalmond;
+}
+
+
+
 .App {
   text-align: center;
 }
